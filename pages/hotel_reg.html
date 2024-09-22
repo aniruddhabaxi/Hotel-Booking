@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta name="description" content="Dynamic web development">
+<meta name="author" content="Aniruddha">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link href="../css/style_assign13.css" rel="stylesheet" type="text/css">
+<link href="../css/nav.css" rel="stylesheet" type="text/css">
+<link href="../css/form.css" rel="stylesheet" type="text/css">
+<title>Hotel registration</title>
+</head>
+<body>
+<header>
+<section class="row">
+<div class="col-1 logo">
+<img src="../images/logo.png" width="136" height="125">
+</div>
+<div class="col-6"><h1>Book your hotel for luxury stay.!</h1></div>
+<div class="follow" class="col-5">
+<p><a href="../pages/hotel_reg.html">Register your hotel here.!</a></p>
+<ul>
+<li style="padding:6px 5px 0px 0px;">Follow Us:</li>
+<li><a href="#"><img src="../images/meta.png"></a></li>
+<li><a href="#"><img src="../images/twitter.png"></a></li>
+<li><a href="#"><img src="../images/linkedin.png"></a></li>
+</ul>
+</div>
+</header>
+</section>
+<section class="row">
+<nav class="col-12 nav_upper">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../pages/about_us.html">About Us</a></li>
+<li><a href="../pages/room_booking.html">Room Booking</a></li>
+<li><a href="../pages/contact_us.html">Contact Us</a></li>
+<li><a href="../pages/manage_bookings.html">Manage Bookings</a></li>
+<li style="margin-right:0px;"><a href="../pages/customer_reg.html">Login/ Sign Up</a>
+    <ul>
+        <li>
+        <p><a href="../pages/customer_login.html">Customer Login</a>
+        <a href="../pages/client_login.html">Client Login</a>
+        <a href="../pages/hotel_reg.html">Register your hotel</a></p>
+        </li>
+    </ul>
+</li>
+</ul>
+</nav>
+</section>
+<article class="col-12"> 
+<fieldset>
+<legend style="font-size:16px; font-weight:bold; color: #002f8e;;">Hote owner's personal details</legend>
+<form action="#" method="POST" autocomplete="off">
+<div class="reg">
+<div class="custom_input_box">
+<label for ="firstname">First name:</label>
+<input type="text" id="firstname" name="firstname" placeholder="First name..">
+</div>
+<div class="custom_input_box">
+<label for ="middlename">Middle name:</label>
+<input type="text" id="middlename" name="middlename" placeholder="Middle name..">
+</div>
+<div class="custom_input_box">
+<label for ="lastname">Last name:</label>
+<input type="text" id="lastname" name="lastname" placeholder="Last name..">
+</div>
+<div class="custom_input_box" style="width: 60%;">
+<label for ="gender" required style="margin-right:60px;">Sex:</label>
+<input type="radio" value="female" name="sex" id="female">
+<label for ="female">Female:</label>
+<input type="radio" value="male" name="sex" id="male">
+<label for ="male">Male:</label>
+<input type="radio" value="other" name="sex" id="other">
+<label for ="other">Other:</label>
+</div>
+<div class="custom_input_box">
+<label for="email"> Email ID: </label>
+<input type="email" name="email" id="email" placeholder="Email address.." required>
+</div>
+<div class="custom_input_box">
+<label for ="contactnum">Contact Number:</label>
+<input type="tel" name="contactnum" id="contactnum" placeholder="1234-567-8901" required><br/>
+</div>
+<div class="custom_input_box">
+<label for ="dateofbirth">Date of Birth:</label>
+<input type="date" id="dateofbirth" name="dateofbirth">
+</div>
+
+<div class="custom_input_box">
+<label for ="unique_id">Driving License:</label>
+<input type="text" id="unique_id" name="unique_id" autofocus size="12" required>
+</div>
+<div class="custom_input_box">
+<label for="owner_res_address">Residential Address:</label>
+<textarea rows="2" cols="10" id="owner_res_address" name="owner_res_address"></textarea>
+</div>
+<div class="custom_input_box">
+<label for="owner_perm_address">Permanent Address:</label>
+<textarea rows="2" cols="10" id="owner_perm_address" name="owner_perm_address"></textarea>
+</div>
+<div class="custom_input_box">
+<label for ="owner_state">State:</label>
+<input type="text" id="owner_state" name="owner_state">
+</div>
+<div class="custom_input_box">
+<label for ="owner_city">City:</label>
+<input type="text" id="owner_city" name="owner_city">
+</div>
+<div class="custom_input_box">
+<label for ="owner_zipcode">Zip Code:</label>
+<input type="text" name="owner_zipcode" id="owner_zipcode" maxlength="10" placeholder="Zip code..">
+</div>
+
+<div class="custom_input_box">
+<label for ="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter username..">
+</div>
+<div class="custom_input_box">
+<label for="password"> Password: </label>
+<input type="Password" name="Password" id="Password" required placeholder="*****" required>
+</div>
+<div class="custom_input_box">
+<label for ="password">Re-enter password:</label>
+<input type="Password" name="Password" id="Password" placeholder="*****" required>
+</div>
+<div class="custom_input_box">
+<label for="photo">Upload your photo:</label>
+<input type="file" id="photo" name="photo">
+</div>
+<div class="custom_input_box">
+<label for="id_proof">Upload ID proof:</label>
+<input type="file" id="id_proof" name="id_proof">
+</div>
+</fieldset><br>
+
+<fieldset>
+<legend style="font-size:16px; font-weight:bold; color: #002f8e;;"> Hotel Details</legend>
+<form action="#" method="POST" autocomplete="off">
+<div class="reg">
+<div class="custom_input_box">
+<label for ="hotelname">Hotel name:</label>
+<input type="text" id="hotelname" name="hotelname" placeholder="Hotel name..">
+</div>
+<div class="custom_input_box" style="width: 60%;">
+<label for ="property" required style="margin-right:60px;">Type of property:</label>
+<input type="radio" value="hotel" name="property" id="hotel">
+<label for ="hotel">Hotel:</label>
+<input type="radio" value="apartment" name="property" id="apartment">
+<label for ="apartment">Apartment:</label>
+<input type="radio" value="house" name="property" id="house">
+<label for ="house">House:</label>
+</div>
+<div class="custom_input_box">
+<label for ="totalroom">Number of rooms:</label>
+<input type="text" id="totalroom" name="totalroom">
+</div>
+<div class="check_box">
+<span>Amenities:</span>
+<label for ="cancellation">Free cancellation:
+<input type="checkbox" value="cancellation" name="amenities" id="cancellation">
+</label>
+<label for ="pool">Swimming Pool:
+<input type="checkbox" value="pool" name="amenities" id="pool">
+</label>
+<label for ="breakfast">Breakfast:
+<input type="checkbox" value="breakfast" name="amenities" id="breakfast">
+</label>
+<label for ="cab">Cab facility:
+<input type="checkbox" value="cab" name="amenities" id="cab">
+</label>
+<label for ="gym">Gym:
+<input type="checkbox" value="gym" name="amenities" id="gym">
+</label>
+</div>
+<div class="custom_input_box">
+<label for="email"> Email ID: </label>
+<input type="email" name="email" id="email" placeholder="Email address.." required>
+</div>
+<div class="custom_input_box">
+<label for ="contactnum">Contact Number:</label>
+<input type="tel" name="contactnum" id="contactnum" placeholder="1234-567-8901" required><br/>
+</div>
+<div class="custom_input_box">
+<label for ="faxnum">Fax Number:</label>
+<input type="tel" name="faxnum" id="faxnum"><br/>
+</div>
+<div class="custom_input_box">
+<label for ="reg_num">Registration Number:</label>
+<input type="text" id="reg_num" name="reg_num" required>
+</div>
+<div class="custom_input_box">
+<label for ="reg_date">Registration date:</label>
+<input type="date" id="reg_date" name="reg_date">
+</div>
+<div class="custom_input_box">
+<label for="hotel_address">Hotel Address:</label>
+<textarea rows="2" cols="10" id="hotel_address" name="hotel_address"></textarea>
+</div>
+<div class="custom_input_box">
+<label for ="hotel_states">State:</label>
+<input type="text" id="hotel_states" name="hotel_states" required>
+</div>
+<div class="custom_input_box">
+<label for ="hotel_city">City:</label>
+<input type="text" id="hotel_city" name="hotel_city" required>
+</div>
+<div class="custom_input_box">
+<label for ="owner_zipcode">Zip Code:</label>
+<input type="text" name="owner_zipcode" id="owner_zipcode" maxlength="10" placeholder="Zip code..">
+</div>
+<div class="custom_input_box">
+<label for="reg_proof">Registration document:</label>
+<input type="file" id="reg_proof" name="reg_proof" required>
+</div>
+<div class="custom_input_box">
+<label for="hotel_photo">Hotel Photo:</label>
+<input type="file" id="hotel_photo" name="hotel_photo" required>
+</div>
+<div class="custom_input_box">
+<label for="aggreement_photo">Upload Agrrement:</label>
+<input type="file" id="aggreement_photo" name="aggreement_photo" required>
+</div>
+<div class="div_submit">
+<input type="submit" value="Submit" style="background-color: #0aa9f6; color: #ffffff;">
+<input type="submit" value="Reset" style="background-color: #0aa9f6; color: #ffffff;">
+</fieldset>
+</div><br>
+</article>
+</section>
+
+<article class="col-12">
+<footer>
+<p>@2024 All right reserved.. Designed by Aniruddha Baxi..</p>
+</footer>
+</article>
+</section>
+</body>
+</html>
